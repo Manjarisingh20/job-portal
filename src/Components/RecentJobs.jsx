@@ -7,15 +7,17 @@ const handleJobClick = () => {
 
 function RecentJobs() {
   return (
-    <div className="px-4 md:px-12 py-10 bg-white">
-      <div>
-        <h1 className="text-3xl md:text-5xl font-semibold mt-14">Recent Jobs Available</h1>
-        <p className="text-sm md:text-base mt-4 text-gray-600">
+    <section className="bg-white px-4 md:px-20 py-16">
+      <div className="text-center md:text-left mb-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
+          Recent Jobs Available
+        </h1>
+        <p className="text-sm md:text-base text-gray-500 mt-3">
           At eu lobortis pretium tincidunt amet lacus ut aenean aliquet...
         </p>
       </div>
 
-      <div className="mt-10 flex flex-col gap-8">
+      <div className="space-y-8">
         <JobCard
           postedTime="10 min ago"
           jobTitle="Forward Security Director"
@@ -25,7 +27,6 @@ function RecentJobs() {
           buttonLabel="Job Details"
           onButtonClick={handleJobClick}
         />
-
         <JobCard
           postedTime="12 min ago"
           jobTitle="Regional Creative Facilitator"
@@ -35,7 +36,6 @@ function RecentJobs() {
           buttonLabel="Job Details"
           onButtonClick={handleJobClick}
         />
-
         <JobCard
           postedTime="15 min ago"
           jobTitle="Internal Integration Planner"
@@ -45,7 +45,6 @@ function RecentJobs() {
           buttonLabel="Job Details"
           onButtonClick={handleJobClick}
         />
-
         <JobCard
           postedTime="24 min ago"
           jobTitle="District Intranet Director"
@@ -55,7 +54,6 @@ function RecentJobs() {
           buttonLabel="Job Details"
           onButtonClick={handleJobClick}
         />
-
         <JobCard
           postedTime="26 min ago"
           jobTitle="Corporate Tactics Facilitator"
@@ -66,7 +64,7 @@ function RecentJobs() {
           onButtonClick={handleJobClick}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

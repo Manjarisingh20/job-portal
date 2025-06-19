@@ -24,7 +24,7 @@ function BrowseByCategory() {
 
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 md:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 md:px-20">
         {categories.map((cat, index) => (
           <CategoryCard key={index} title={cat.title} jobs={cat.jobs} icon={cat.icon} />
         ))}

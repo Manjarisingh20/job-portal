@@ -46,14 +46,18 @@ export default function JobCard({
                     filter: "contrast(1.2) brightness(0.8)", // Optional: make icon look bolder
                   }}
                 />
-                <LButton label={tag} onClick={onButtonClick} />
+                <div >
+                <LButton label={tag} onClick={onButtonClick} /></div>
+                
               </div>
             ))}
           </div>
         </div>
       </div>
 
+      <div >
       <Button label={buttonLabel} onClick={onButtonClick} />
+      </div>
     </div>
   );
 }
