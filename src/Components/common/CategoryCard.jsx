@@ -1,13 +1,13 @@
 import React from 'react';
-import '../../App.css';
-import { FaSeedling } from 'react-icons/fa'; 
 
-function CategoryCard({ title = "Agriculture", jobs = 1254 }) {
+function CategoryCard({ title, jobs, icon: Icon }) {
   return (
-    <div className="category-card">
-      <FaSeedling className="category-icon " />
-      <h5 className="category-title ">{title}</h5>
-      <span className="category-jobs">{jobs} jobs</span>
+    <div className="bg-white rounded-2xl shadow-md p-6 text-center hover:shadow-lg transition h-64 flex flex-col justify-center">
+      {Icon && <Icon className="text-emerald-600 text-4xl mx-auto mb-4" />}
+      <h3 className="text-base font-bold text-black">{title}</h3>
+      <span className="w-fit mx-auto mt-3 text-xs text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+        {jobs} jobs
+      </span>
     </div>
   );
 }

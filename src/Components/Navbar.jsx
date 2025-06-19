@@ -1,11 +1,10 @@
 import React from "react";
-import mainicon from "../Icons/mainicon.png";
 
 export default function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar flex flex-col md:flex-row items-center justify-between p-4">
       <div className="navbar-left">
-        <img src={mainicon} alt="mainicon" className="navbar-icon" />
+        <img src='/Images/mainicon.png' alt="mainicon" className="navbar-icon" />
         <span className="brand-name">Job Portal</span>
       </div>
       <ul className="navbar-menu">

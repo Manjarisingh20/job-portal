@@ -3,13 +3,9 @@ import "../../App.css";
 import { BsBookmarkPlus } from "react-icons/bs";
 import Button from "./Button";
 import LButton from "./LButton";
-import Bag from "../../Icons/bag.png";
-import Clock from "../../Icons/clock.png";
-import Wallet from "../../Icons/wallet.png";
-import Location from "../../Icons/location.png";
 
 
-const tagIcons = [Bag, Clock, Wallet, Location];
+const tagIcons = ['/Images/bag.png','/Images/clock.png','/Images/wallet.png','/Images/location.png'];
 
 export default function JobCard({
   postedTime = "10 min ago",
@@ -42,7 +38,7 @@ export default function JobCard({
             {tags.map((tag, index) => (
               <div key={index} className="d-flex align-items-center gap-2">
                 <img
-                  src={tagIcons[index] || Bag}
+                  src={tagIcons[index] || '/Images/bag.png'}
                   alt={`tag-icon-${index}`}
                   style={{
                     width: "22px", // Increase size for heavier look

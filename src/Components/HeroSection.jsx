@@ -1,8 +1,4 @@
 import React from "react";
-import briefcase from "../Icons/briefcase.png";
-import employees from "../Icons/employees.png";
-import officeBuilding from "../Icons/office-building.png";
-import magnifyingGlass from "../Icons/magnifying-glass.png";
 
 export default function HeroSection() {
   return (
@@ -28,7 +24,7 @@ export default function HeroSection() {
         </select>
         <button className="search-btn">
           <img
-            src={magnifyingGlass}
+            src='/Images/magnifying-glass.png'
             alt="Search Icon"
             className="inline-block w-4 h-4 mr-2"
           />
@@ -40,7 +36,7 @@ export default function HeroSection() {
         <div className="stat-item">
           <div className="stat-icon">
             <img
-              src={briefcase}
+              src='/Images/briefcase.png'
               alt="Jobs Icon"
               style={{ width: "24px", height: "24px" }}
             />
@@ -54,7 +50,7 @@ export default function HeroSection() {
         <div className="stat-item">
           <div className="stat-icon">
             <img
-              src={employees}
+              src='/Images/employees.png'
               alt="Candidates Icon"
               style={{ width: "24px", height: "24px" }}
             />
@@ -68,7 +64,7 @@ export default function HeroSection() {
         <div className="stat-item">
           <div className="stat-icon">
             <img
-              src={officeBuilding}
+              src='/Images/office-building.png'
               alt="Companies Icon"
               style={{ width: "24px", height: "24px" }}
             />
