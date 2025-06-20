@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const navigate = useNavigate();
 
   return (
     <nav className="navbar">
@@ -31,8 +33,8 @@ export default function Navbar() {
       </ul>
 
       <div className="navbar-right hidden md:flex">
-        <button className="login-btn">Login</button>
-        <button className="register-btn">Register</button>
+        <button className="login-btn" onClick={() => navigate("/login")}>Login</button>
+        <button className="register-btn" onClick={() => navigate("/register")}>Register</button>
       </div>
 
       
@@ -45,8 +47,8 @@ export default function Navbar() {
             <li>Contact Us</li>
           </ul>
           <div className="flex flex-col gap-3 mt-4">
-            <button className="login-btn text-left">Login</button>
-            <button className="register-btn w-full">Register</button>
+            <button className="login-btn text-left" onClick={() => navigate("/login")}>Login</button>
+            <button className="register-btn w-full" onClick={() => navigate("/register")}>Register</button>
           </div>
         </div>
       )}
