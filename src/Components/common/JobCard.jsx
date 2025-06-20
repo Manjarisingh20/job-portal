@@ -1,62 +1,58 @@
-import React from "react";
+import React from 'react';
 import "../../App.css";
 import { BsBookmarkPlus } from "react-icons/bs";
-import Button from "./Button";
-import LButton from "./LButton";
-
-
-const tagIcons = ['/Images/bag.png','/Images/clock.png','/Images/wallet.png','/Images/location.png'];
 
 export default function JobCard({
-  postedTime = "10 min ago",
+  postedTime,
   jobTitle,
   companyName,
   logo,
   tags = [],
-  buttonLabel = "View Job",
+  buttonLabel,
   onButtonClick,
 }) {
   return (
-    <div className="card job-card p-3 d-flex flex-column flex-md-row justify-content-between align-items-start position-relative">
-      <span className="badge bg-light text-success position-absolute top-5 start-7 m-0">
-        {postedTime}
-      </span>
+    <div className="job-card relative p-4 sm:p-6 border rounded-xl shadow-md bg-white">
+      
+      <div className="text-xs text-gray-400 mb-2">{postedTime}</div>
       <BsBookmarkPlus className="position-absolute top-5 end-8 m-0 text-muted fs-4" />
 
-      <div className="d-flex mt-7">
-        <img
-          src={logo}
-          alt="Company Logo"
-          className="w-10 h-10 rounded-full m-3 "
-        />
-
-        <div>
-          <h5 className="fw-semibold mb-2 text-2xl">{jobTitle}</h5>
-          <p className="text-muted text-[14px] mt-2 mb-4">{companyName}</p>
-
-          <div className="d-flex flex-wrap gap-3 text-muted small align-items-center ml-0">
-            {tags.map((tag, index) => (
-              <div key={index} className="d-flex align-items-center gap-2">
-                <img
-                  src={tagIcons[index] || '/Images/bag.png'}
-                  alt={`tag-icon-${index}`}
-                  style={{
-                    width: "22px", // Increase size for heavier look
-                    height: "22px",
-                    filter: "contrast(1.2) brightness(0.8)", // Optional: make icon look bolder
-                  }}
-                />
-                <div >
-                <LButton label={tag} onClick={onButtonClick} /></div>
-                
-              </div>
-            ))}
+      
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        
+        <div className="flex items-center gap-4">
+          <img
+            src={logo}
+            alt="Company Logo"
+            className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+          />
+          <div>
+            <h2 className="text-lg font-semibold text-gray-800">{jobTitle}</h2>
+            <p className="text-sm text-gray-500">{companyName}</p>
           </div>
         </div>
       </div>
 
-      <div >
-      <Button label={buttonLabel} onClick={onButtonClick} />
+      
+      <div className="mt-4 flex flex-wrap gap-2">
+        {tags.map((tag, index) => (
+          <span
+            key={index}
+            className="px-3 py-1 bg-gray-100 text-sm text-gray-600 rounded-full"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      
+      <div className="mt-6 sm:mt-4 flex justify-center sm:justify-end">
+        <button
+          onClick={onButtonClick}
+          className="px-6 py-2 bg-emerald-500 text-white rounded-md font-semibold text-sm sm:text-base hover:bg-emerald-600 transition"
+        >
+          {buttonLabel}
+        </button>
       </div>
     </div>
   );

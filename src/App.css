@@ -261,22 +261,6 @@
   font-size: 1.2rem;
 }
 
-.brands {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  background-color: #000;
-  padding: 40px 20px;
-}
-
-.brands img {
-  height: 50px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-}
 
 
 
@@ -409,7 +393,18 @@
 
   
 }
+.button-jobdetails{
+        position: absolute;
+        top: 120px;
+        right: 40px;
+        background-color: #54bead;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
 
+}
 
 
 @media (max-width: 768px) {
@@ -430,5 +425,15 @@
     width: 26px;
     height: 26px;
   }
+  .button-jobdetails{
+  
+    background-Color: #54bead;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-Radius: 5px;
+    cursor: pointer;
+
+}
 }
 

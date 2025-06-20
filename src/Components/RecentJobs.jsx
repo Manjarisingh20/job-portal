@@ -7,17 +7,19 @@ const handleJobClick = () => {
 
 function RecentJobs() {
   return (
-    <section className="bg-white px-4 md:px-20 py-16">
-      <div className="text-center md:text-left mb-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
-          Recent Jobs Available
-        </h1>
-        <p className="text-sm md:text-base text-gray-500 mt-3">
+    <div className="px-4 md:px-12 py-10 bg-white">
+      <div className="text-center md:mr-20 md:ml-20 md:text-left">
+      <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-semibold mt-14 lg:text-left sm:text-center">
+  Recent Jobs Available
+</h1>
+
+
+        <p className="text-sm md:text-base mt-4 lg:text-left sm:text-center text-gray-600">
           At eu lobortis pretium tincidunt amet lacus ut aenean aliquet...
         </p>
       </div>
 
-      <div className="space-y-8">
+      <div className="mt-10 flex md:mr-20 md:ml-20 flex-col gap-0">
         <JobCard
           postedTime="10 min ago"
           jobTitle="Forward Security Director"
@@ -64,8 +66,9 @@ function RecentJobs() {
           onButtonClick={handleJobClick}
         />
       </div>
-    </section>
+    </div>
   );
 }
 
 export default RecentJobs;
+
