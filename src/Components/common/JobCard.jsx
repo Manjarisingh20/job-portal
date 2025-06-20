@@ -49,7 +49,7 @@ export default function JobCard({
       <div className="mt-6 sm:mt-4 flex justify-center sm:justify-end">
         <button
           onClick={onButtonClick}
-          className="px-6 py-2 bg-emerald-500 text-white rounded-md font-semibold text-sm sm:text-base hover:bg-emerald-600 transition"
+          className="px-20 py-2 bg-emerald-500 text-white sm:px-10 sm:py-2 rounded-md font-semibold text-sm sm:text-base hover:bg-emerald-600 transition"
         >
           {buttonLabel}
         </button>
