@@ -3,9 +3,9 @@ import Stats from './common/Stats';
 
 function Poster() {
   return (
-    <div className="bg-white ">
+    <div className="bg-white  ">
       
-      <div className="flex flex-col  md:mr-16 md:ml-16 lg:flex-row items-center gap-10 px-6 md:px-12 py-16">
+      <div className="flex flex-col  md:mr-16 md:ml-16 lg:flex-row mt-10 gap-10 px-6 md:px-12 py-16">
         
         
         <div className="w-full lg:w-1/2">
@@ -17,14 +17,16 @@ function Poster() {
         </div>
 
         
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Good Life Begins With A Good Company
-          </h1>
-          <p className="mt-6 text-gray-600 text-sm md:text-base leading-relaxed">
-            Ultricies purus dolor viverra mi laoreet at cursus justo. Ultrices puris diam egestas amet faucibus tempor blandit. 
-            Elit velit mauris aliquam est diam. Leo sagittis consectetur diam morbi erat aenean. Vulputate praesent congue faucibus...
-          </p>
+        <div className="w-full lg:w-1/2 ">
+        <div className="">
+  <h1 className="text-3xl md:text-5xl md:text-left sm:text-center font-bold md:mt-28 text-gray-800 leading-tight">
+    Good Life Begins With A Good Company
+  </h1>
+  <p className="mt-6 text-gray-600 text-sm   md:text-base leading-relaxed">
+    Ultricies purus dolor viverra mi laoreet at cursus justo. Ultrices puris diam egestas amet faucibus tempor blandit. 
+    Elit velit mauris aliquam est diam. Leo sagittis consectetur diam morbi erat aenean. Vulputate praesent congue faucibus...
+  </p>
+</div>
 
           <div className="mt-8  flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-xl font-semibold">
@@ -38,11 +40,12 @@ function Poster() {
       </div>
 
       
-      <div className="flex flex-col md:flex-row justify-center items-center text-center gap-10 md:gap-20 py-12 px-6 md:px-20">
-        <Stats />
-        <Stats />
-        <Stats />
-      </div>
+      <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-10 md:gap-20 py-12 px-6 md:px-20">
+  <Stats />
+  <Stats />
+  <Stats />
+</div>
+
 
       
       <div className="bg-gray-800 text-white rounded-2xl  mt-14  mr-4 ml-4 md:mr-28 md:ml-28 p-8 md:p-16 text-left">

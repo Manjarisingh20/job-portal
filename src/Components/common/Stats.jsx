@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
   return (
-    <div className="text-center">
+    <div className="ml-5 md:text-left sm:text-center">
       <h1 className="text-4xl md:text-5xl text-emerald-500 font-bold">12k+</h1>
       <h3 className="mt-3 text-xl md:text-2xl font-semibold text-gray-800">Clients worldwide</h3>
       <p className="mt-2 text-sm text-gray-500">

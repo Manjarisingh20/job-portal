@@ -52,7 +52,7 @@ export default function HeroSection() {
 
   
   <div className="flex flex-row items-center sm:items-start gap-2">
-    <div className="bg-emerald-500 w-10 h-10 sm:w-14 sm:h-14 rounded-full flex justify-center items-center">
+    <div className="bg-emerald-500 w-10 h-10 sm:w-20 sm:h-20 rounded-full flex justify-center items-center">
       <img src="/Images/employees.png" alt="Candidates" className="w-5 h-5 sm:w-6 sm:h-6" />
     </div>
     <div className="flex flex-col"><p className="text-sm sm:text-lg font-bold text-white mt-2">10,250</p>
@@ -62,7 +62,7 @@ export default function HeroSection() {
 
 
   <div className="flex flex-row items-center sm:items-start gap-2">
-    <div className="bg-emerald-500 w-10 h-10 sm:w-14 sm:h-14 rounded-full flex justify-center items-center">
+    <div className="bg-emerald-500 w-10 h-10 sm:w-20 sm:h-20 rounded-full flex justify-center items-center">
       <img src="/Images/office-building.png" alt="Companies" className="w-5 h-5 sm:w-6 sm:h-6" />
     </div>
     <div className="flex flex-col"><p className="text-sm sm:text-lg font-bold text-white mt-2">18,400</p>
