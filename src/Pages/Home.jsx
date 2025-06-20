@@ -1,5 +1,5 @@
+// Pages/Home.jsx
 import React from "react";
-import Navbar from "../Components/Navbar";
 import HeroSection from "../Components/HeroSection";
 import Brands from "../Components/Brands";
 import "../App.css";
@@ -9,6 +9,7 @@ import Poster from "../Components/poster"
 import Testimonials from "../Components/Testimonials";
 import News from "../Components/News";
 import Footer from "../Components/Footer";
+import Navbar from "../Components/Navbar";
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
           <Navbar />
           <HeroSection />
         </div>
-          <Brands />
+        <Brands />
       </div>
       <div className="jobs">
         <RecentJobs />
@@ -26,21 +27,14 @@ function Home() {
       <div className="category">
         <BrowseByCategory />
       </div>
-      <div>
-        <Poster />
-      </div>
-      <div>
+      <Poster />
       <Testimonials />
-      </div>
-      <div>
-        <News />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <News />
+      <Footer />
     </div>
   );
 }
 
 export default Home;
+
  

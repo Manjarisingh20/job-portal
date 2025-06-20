@@ -352,6 +352,15 @@
   font-size: 1rem;
 }
 
+.clip-slant {
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background-image: url('../public/Images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .search-bar {
     display: flex;
@@ -364,6 +373,15 @@
     background: white;
     padding-bottom: 20px;
   }
+
+  .login {
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    height: 100vh;            
+    text-align: center;      
+  }
+  
 
   .search-btn {
     display: inline-flex;
