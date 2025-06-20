@@ -11,7 +11,7 @@ function Testimonials() {
         At eu lobortis pretium tincidunt amet lacus ut aenean aliquet. Blandit a massa elementum id...
       </p>
 
-      <div className="flex flex-col md:flex-row mr:4 ml:4 md:mr-8 md:ml-8 items-center justify-center gap-0 ">
+      <div className="flex flex-col md:flex-row mr:3 ml:4 md:mr-3 md:ml-3 items-center justify-center gap-0 ">
         <TestimonialCards />
         <TestimonialCards />
         <TestimonialCards />

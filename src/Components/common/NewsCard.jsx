@@ -8,7 +8,7 @@ function NewsCard() {
       <img
         src="/Images/new.png"
         alt="News"
-        className=" h-96 w-[95%] ml-4 object-cover rounded-2xl mb-6"
+        className=" h-96 w-[90%] ml-4 md:ml-0 object-cover rounded-2xl mb-6"
       />
 
       

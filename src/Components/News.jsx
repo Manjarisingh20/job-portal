@@ -9,7 +9,7 @@ function News() {
         Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed tristique in dolor
       </p>
 
-      <div className='mt-10 flex md:ml-16 flex-col md:flex-row gap-8'>
+      <div className='mt-10 flex md:ml-16 flex-col md:flex-row gap-0'>
         <NewsCard />
         <NewsCard />
       </div>
