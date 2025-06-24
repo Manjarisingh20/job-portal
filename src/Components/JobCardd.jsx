@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../../App.css";
+import "../App.css";
 import { BsBookmarkPlus } from "react-icons/bs";
-import Images from './Images'
+import Images from "./common/Images"
 
-
-export default function JobCard({
+export default function JobCardd({
   postedTime,
   jobTitle,
   companyName,
@@ -16,7 +15,7 @@ export default function JobCard({
 }) {
   const navigate = useNavigate();
   return (
-    <div className="job-card relative p-4 sm:p-6 border rounded-xl shadow-md bg-white">
+    <div className="relative p-4 sm:p-6 ">
       
       <div className="text-xs  text-gray-400 mb-2">{postedTime}</div>
       <BsBookmarkPlus className="position-absolute top-5 end-8 m-0 text-muted fs-4" />
@@ -53,7 +52,7 @@ export default function JobCard({
       <div className="mt-6 sm:mt-4 flex justify-center sm:justify-end">
         <button
          onClick={() => navigate("/details")}
-          className="px-20 py-2 bg-emerald-500 text-white sm:px-6 sm:py-2 rounded-md font-semibold text-sm sm:text-base hover:bg-emerald-600 transition"
+          className="px-20 py-2 bg-button-bg text-white sm:px-6 sm:py-2 rounded-md font-semibold text-sm sm:text-base hover:bg-emerald-600 transition"
         
         >
           {buttonLabel}

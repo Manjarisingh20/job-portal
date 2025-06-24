@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Button({ label, onClick }) {
+function Button({ label, onClick, className }) {
   return (
-    <button className='button-jobdetails'
+    <button
+      className={className}
       onClick={onClick}
-      >
+    >
       {label}
     </button>
   );
