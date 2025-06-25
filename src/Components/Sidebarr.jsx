@@ -11,11 +11,11 @@ import {
 
 function Sidebarr() {
   return (
-    <div className="bg-emerald-50 p-5 rounded-xl">
+    <div className="bg-sidebar-bg p-5 rounded-xl">
       <h4 className="font-bold text-gray-800 text-lg mb-4">Job Overview</h4>
       <ul className="text-sm text-gray-700 space-y-4">
         <li className="flex items-start gap-2">
-          <FaUser className="text-emerald-500 mt-1" />
+          <FaUser className="text-button-bg mt-1" />
           <div>
             <p className="font-semibold">Job Title</p>
             <p>Corporate Solutions Executive</p>

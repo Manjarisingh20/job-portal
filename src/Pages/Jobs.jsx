@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import Navbar from "../Components/Navbar";
 import JobCard from "../Components/common/JobCard";
-import Footer from "../Components/Footer";
 import TopCompaniesCard from "../Components/common/TopCompaniesCard";
 import Sidebar from "../Components/Sidebar";
 import Button from "../Components/common/Button";
+import Layout from "../Components/common/Layout";
 
 const JobsPage = () => {
   const [salary, setSalary] = useState(50000);
@@ -18,22 +17,32 @@ const JobsPage = () => {
   };
 
   return (
+    <Layout >
     <div className="font-sans">
       <div className="bg-black">
-        <Navbar />
-        <h1 className="text-center text-white text-3xl font-bold pb-20 pt-3">
+        <h1 className="text-center text-white text-4xl font-bold pb-20 pt-3">
           Jobs
         </h1>
       </div>
       <div className="flex px-4 md:px-20">
-        
        <Sidebar />
+       
 
+       
         <div className="w-full md:w-3/4">
-          <div className="mt-10 flex md:mx-20 flex-col gap-4">
-            <span className="mt-5 text-gray-500">
+          <div className="mt-10 flex md:mx-10 flex-col gap-1">
+            <div className="mt-4 mb-10 ">
+            <span className="mt-5 mr-48 text-gray-500">
               Showing 6–6 of 10 results
-            </span>
+              </span>
+            <select className="md:ml-96  px-3 py-1 text-sm border border-gray-300 rounded-md w-44">
+
+          <option>Sort by Latest</option>
+          <option>Sort by Popularity</option>
+          <option>Other</option>
+        </select>
+            </div>
+            
             <JobCard
               postedTime="10 min ago"
               jobTitle="Forward Security Director"
@@ -86,10 +95,10 @@ const JobsPage = () => {
             />
           </div>
 
-          <div className="flex justify-center gap-2 mt-4">
-            <Button className='border px-3 py-1 text-sm' label={1}/>
-            <Button className='border px-3 py-1 text-sm' label={2}/>
-            <Button className='border px-3 py-1 text-sm' label="Next"/>
+          <div className="flex  gap-2 mt-4">
+            <Button className='border hover:text-white ml-96 hover:bg-button-bg rounded-lg px-3 py-2 text-sm' label={1}/>
+            <Button className='border hover:text-white  hover:bg-button-bg rounded-lg px-3 py-2 text-sm' label={2}/>
+            <Button className='border hover:text-white ml-96 hover:bg-button-bg rounded-lg  px-3 py-1 text-sm' label="Next  >"/>
           </div>
         </div>
       </div>
@@ -100,7 +109,7 @@ const JobsPage = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </p>
 
-        <div className="gap-6 mx-10 grid grid-cols-1 md:grid-cols-4">
+        <div className="gap-6 mx-16 grid grid-cols-1 md:grid-cols-4">
           <TopCompaniesCard />
           <TopCompaniesCard />
           <TopCompaniesCard />
@@ -108,8 +117,8 @@ const JobsPage = () => {
         </div>
       </div>
 
-      <Footer />
     </div>
+    </Layout>
   );
 };
 
