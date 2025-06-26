@@ -25,6 +25,7 @@ const skills =[
 
 
 ];
+
 const JobDetailsPage = () => {
   const handleJobClick = () => {
     console.log("Job Details Clicked");
@@ -32,6 +33,7 @@ const JobDetailsPage = () => {
 
   return (
     <Layout>
+
       <div className="">
       <div className="font-sans bg-white text-gray-800">
         <div className="bg-black">
@@ -39,6 +41,7 @@ const JobDetailsPage = () => {
           Job Details
         </h1>
         </div>
+
 
         <div className="px-4 md:m-10 md:px-20">
           <JobCardd
@@ -50,7 +53,9 @@ const JobDetailsPage = () => {
           />
         </div>
 
+
         <div className="flex flex-col md:flex-row gap-6  container mt-10">
+
           
           <div className="w-full md:w-3/4">
             
@@ -66,6 +71,7 @@ const JobDetailsPage = () => {
 
             
             <div className="mt-6">
+
     <h3 className="text-2xl font-bold mb-4">Key Responsibilities</h3>
     <ul className="list-none leading-loose space-y-2 text-sm md:text-base text-gray-600 break-words">
       {responsibilities.map((item, index) => (
@@ -77,11 +83,14 @@ const JobDetailsPage = () => {
     </ul>
   </div>
 
+
             
             <div className="mt-9">
               <h3 className="text-2xl font-bold mb-4">Professional Skills</h3>
               <ul className="list-none leading-loose space-y-2 text-sm md:text-base text-gray-600 break-words">
+
                 {skills.map((item, index) => (
+
                   <li key={index} className="flex items-start gap-2">
                     <FaCheck className="text-button-bg mt-1" />
                     <span>{item}</span>
@@ -158,17 +167,23 @@ const JobDetailsPage = () => {
             
             <div className="bg-emerald-50 p-5 rounded-xl">
               <h4 className="font-bold text-gray-800 text-lg mb-4">Send Us Message</h4>
+
               <Input
+
                 type="text"
                 placeholder="Full Name"
                 className="w-full mb-3 px-4 py-2 rounded text-sm bg-white border focus:outline-none"
               />
+
               <Input
+
                 type="text"
                 placeholder="Email Address"
                 className="w-full mb-3 px-4 py-2 rounded text-sm bg-white border focus:outline-none"
               />
+
               <Input
+
                 type="text"
                 placeholder="Phone Number"
                 className="w-full mb-3 px-4 py-2 rounded text-sm bg-white border focus:outline-none"
@@ -185,7 +200,9 @@ const JobDetailsPage = () => {
           </div>
         </div>
       </div>
+
       </div>
+
     </Layout>
   );
 };

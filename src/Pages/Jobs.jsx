@@ -18,6 +18,7 @@ const JobsPage = () => {
 
   return (
     <Layout >
+
     <div className=" font-sans">
       <div className="bg-black">
         <h1 className="text-center container text-white text-4xl font-bold pb-20 pt-3">
@@ -25,17 +26,24 @@ const JobsPage = () => {
         </h1>
       </div >
       <div className="flex container px-4 md:px-20">
+
        <Sidebar />
        
 
        
+
         <div className="container w-full md:w-3/4">
           <div className="mt-10 flex  flex-col gap-1">
+
+       
+
             <div className="mt-4 mb-10 ">
             <span className="mt-5 mr-48 text-gray-500">
               Showing 6–6 of 10 results
               </span>
+
             <select className=" px-3 py-1 text-sm border border-gray-300 rounded-md w-44">
+
 
           <option>Sort by Latest</option>
           <option>Sort by Popularity</option>
@@ -103,8 +111,10 @@ const JobsPage = () => {
         </div>
       </div>
 
+
       <div className="bg-sidebar-bg">
       <div className="container mt-20 py-10  text-center">
+
         <h2 className="text-4xl font-bold mb-4">Top Company</h2>
         <p className="mb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -118,7 +128,9 @@ const JobsPage = () => {
         </div>
       </div>
 
+
       </div>
+
     </div>
     </Layout>
   );

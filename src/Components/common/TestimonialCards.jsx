@@ -19,6 +19,7 @@ function TestimonialCards() {
       <Images src='../Images/quote.png' alt='quote' className=" ml-60 md:ml-64 mt-1 md:mt-10 w-12 h-12"/>
       <div className="flex pb-10 ">
       <Images src='../Images/happiness.png' alt='happiness' className=" ml-9 w-12 h-12"/>
+
       <div className="ml-5 mt-1">
       <h1 className="font-bold">Marco Kim</h1>
       <p >Happy Client</p>

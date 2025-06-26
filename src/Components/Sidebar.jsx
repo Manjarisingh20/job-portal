@@ -5,6 +5,7 @@ import { BsSearch } from "react-icons/bs";
 import { BsGeoAlt } from "react-icons/bs";
 import Input from "./common/Input";
 
+
 function valuetext(value) {
   return `$${value}K`;
 }
@@ -18,6 +19,7 @@ export default function Sidebar() {
 
   return (
     <div className="container hidden md:block w-1/4 pt-14 ">
+
       <div>
       <div className="rounded-2xl bg-sidebar-bg p-4">
 
@@ -25,6 +27,7 @@ export default function Sidebar() {
 <div className="relative mb-4">
   <BsSearch className="absolute left-3 top-1/2  transform -translate-y-1/2 text-gray-400" />
   <Input 
+
     type="text"
     placeholder="Job title or company"
     className="pl-10 pr-3 py-2 border rounded w-full text-sm"
@@ -41,18 +44,22 @@ export default function Sidebar() {
     <option>Other</option>
   </select>
 </div>
+
   <h3 className="text-lg font-semibold mt-4 mb-3">Category</h3>
   <ul>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Commerce
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Telecommunications
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -60,6 +67,7 @@ export default function Sidebar() {
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Hotels & Tourism
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -67,6 +75,7 @@ export default function Sidebar() {
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Education
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -84,12 +93,13 @@ export default function Sidebar() {
     Show More
   </button>
 
-  
+
   <h3 className="text-lg font-semibold mt-4 mb-3">Job Type</h3>
   <ul>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Full Time
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -97,6 +107,7 @@ export default function Sidebar() {
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Part Time
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -104,6 +115,7 @@ export default function Sidebar() {
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Freelance
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -111,86 +123,106 @@ export default function Sidebar() {
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         Seasonal
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
-        <Input type="checkbox" />
+    <Input type="checkbox" />
+
+
         Fixed-Price
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
   </ul>
 
-  
+
   <h3 className="text-lg font-semibold mt-4 mb-3">Experience Level</h3>
   <ul>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
         <Input type="checkbox" />
+
         No-experience
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Fresher
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Intermediate
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Expert
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
   </ul>
 
-  
+
   <h3 className="text-lg font-semibold mt-4 mb-3">Date Posted</h3>
   <ul>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         All
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Last Hour
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Last 24 Hours
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Last 7 Days
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
     </li>
     <li className="flex justify-between items-center px-3 py-1 hover:bg-gray-200 rounded">
       <label className="flex items-center gap-2 text-sm text-gray-800">
+
         <Input type="checkbox" />
+
         Last 30 Days
       </label>
       <span className="bg-white text-gray-700 text-xs px-2 py-1 rounded-full shadow-sm">10</span>
@@ -216,7 +248,6 @@ export default function Sidebar() {
     <button className="bg-[#16937a] text-white px-3 py-1 rounded">Apply</button>
   </div>
 
-  
   <h3 className="mt-6 text-sm font-semibold leading-none">Tags</h3>
   <div className="mt-3 flex flex-wrap gap-2 text-sm">
     <span className="px-2 py-1 bg-[#c8e5df] text-[#16937a] rounded-xl">engineering</span>

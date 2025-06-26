@@ -5,6 +5,7 @@ import Authstats from "../../Components/common/Authstats";
 import Images from "../../Components/common/Images"
 import Input from "../../Components/common/Input";
 
+
 const Login = () => {
   const navigate = useNavigate();
   return (
@@ -28,11 +29,14 @@ const Login = () => {
           </p>
 
           <Input
+
             type="email"
             placeholder="Email address"
             className="border px-6 py-2 rounded-md w-full mt-3"
           />
+
           <Input
+
             type="password"
             placeholder="Password"
             className="border px-6  py-2 rounded-md w-full mt-3"
@@ -52,7 +56,9 @@ const Login = () => {
           <Button
             className="w-full bg-emerald-600 text-white py-2 mt-6 rounded-md hover:bg-emerald-700 transition"
             onClick={() => navigate("/verify")}
-            label="SignInput"
+
+            label="Sign In →"
+
           />
 
           <div className="text-center text-gray-400 text-sm my-3">or</div>

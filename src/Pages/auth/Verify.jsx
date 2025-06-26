@@ -3,6 +3,7 @@ import Button from '../../Components/common/Button';
 import Images from '../../Components/common/Images';
 import Input from '../../Components/common/Input';
 
+
 function Verify() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start pt-10 font-sans">

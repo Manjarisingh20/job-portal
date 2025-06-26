@@ -1,7 +1,9 @@
 import React from 'react';
 import Button from '../../Components/common/Button';
 import Images from "../../Components/common/Images";
+
 import Input from '../../Components/common/Input';
+
 
 function Reset() {
   return (

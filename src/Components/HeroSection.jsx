@@ -1,6 +1,8 @@
 import React from "react";
 import Images from "./common/Images"
+
 import Input from "./common/Input";
+
 
 export default function HeroSection() {
   return (

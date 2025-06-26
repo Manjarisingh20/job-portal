@@ -3,9 +3,11 @@ import Images from './Images'
 
 function TopCompaniesCard() {
   return (
+
     <div className='container'>
       <div className="rounded-2xl  bg-white p-10">
       <Images src="/Images/instagram.png" className="h-14 w-14 mx-auto" />
+
 
       <h1 className="text-xl mt-4 font-semibold">Instagram</h1>
       <p className="mb-5 mt-4 text-gray-600">
