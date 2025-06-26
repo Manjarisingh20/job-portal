@@ -1,11 +1,12 @@
 import React from "react";
+import Images from './Images'
 
 function NewsCard() {
   return (
     <div className="  mx-auto mt-10 bg-white rounded-3xl  ">
       
     
-      <img
+      <Images
         src="/Images/new.png"
         alt="News"
         className=" h-96 w-[90%] ml-4 md:ml-0 object-cover rounded-2xl mb-6"
@@ -24,7 +25,7 @@ function NewsCard() {
         <button className="text-emerald-700 ml-4 font-medium hover:underline">
           Read more
         </button>
-        <img src="/Images/right-arrow.png" alt="Arrow" className="ml-4 w-5 h-5" />
+        <Images src="/Images/right-arrow.png" alt="Arrow" className="ml-4 w-5 h-5" />
       </div>
     </div>
   );

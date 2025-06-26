@@ -7,18 +7,23 @@ import Verify from "./Pages/auth/Verify";
 import Login from "./Pages/auth/Login";
 import ForgotPass from "./Pages/auth/ForgotPass";
 import Reset from "./Pages/auth/Reset";
+import JobsPage from "./Pages/Jobs";
+import JobDetailsPage from "./Pages/JobDetails";
 
 function App() {
   return (
    
     <BrowserRouter>
       <Routes>
+        <Route path="/home" element={<Home /> } />
         <Route path="/" element={<Home /> } />
         <Route path="/register" element={<Register />} />
         <Route path="/verify" element={<Verify/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpass" element={<ForgotPass />}/>
         <Route path="/reset" element={<Reset />}/>
+        <Route path="/jobs" element = {<JobsPage />}/>
+        <Route path="/details" element = {<JobDetailsPage />}/>
 
       </Routes>
     </BrowserRouter>

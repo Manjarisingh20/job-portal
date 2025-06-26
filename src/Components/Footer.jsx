@@ -1,4 +1,5 @@
 import React from 'react';
+import Images from './common/Images';
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
           
           <div>
             <div className="flex items-center justify-center ">
-              <img src="/Images/mainicon.png" alt="logo" className="w-6 h-6" />
+              <Images src="/Images/mainicon.png" alt="logo" className="w-6 h-6"/>
               <h1 className="text-xl ml-3 font-bold">Job Portal</h1>
             </div>
             <p className="text-sm mt-6 text-center justify-center md:justify-start text-gray-300">
