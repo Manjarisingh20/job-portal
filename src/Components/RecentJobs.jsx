@@ -7,7 +7,7 @@ const handleJobClick = () => {
 
 function RecentJobs() {
   return (
-    <div className="px-4 md:px-12 py-10 bg-white">
+    <div className="container  py-10 bg-white">
       <div className="text-center md:mr-20 md:ml-20 md:text-left">
       <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-semibold mt-14 lg:text-left sm:text-center">
   Recent Jobs Available

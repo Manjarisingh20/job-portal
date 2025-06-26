@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from '../../Components/common/Button';
+import Images from "../../Components/common/Images";
+import Input from '../../Components/common/Input';
 
 function Reset() {
   return (
@@ -6,7 +9,7 @@ function Reset() {
       
       
       <div className="flex items-center justify-center text-center gap-2 mb-6">
-        <img src="/Images/bag.png" alt="logo" className="h-6 w-6" />
+        <Images src="/Images/bag.png" alt="logo" className="h-6 w-6" />
         <h1 className="text-xl font-semibold whitespace-nowrap">MyJob</h1>
       </div>
 
@@ -21,19 +24,22 @@ function Reset() {
 
       
       <div className="flex flex-col gap-3 justify-center  mt-8">
-        <input
+        <Input
           type="text"
           placeholder="New Password"
           className="border border-gray-300 rounded-md py-2 md:px-32 px-20 focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
         />
-        <input
+        <Input
           type="text"
           placeholder="New Password"
           className="border border-gray-300 rounded-md py-2 md:px-32 px-20 focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
         />
       </div>
-      
-      <button className='bg-emerald-700 text-white py-2.5 font-semibold mt-4 md:px-36 px-10 rounded-sm'>Reset Password  → </button>
+      <Button
+  className="w-full bg-emerald-600 text-white py-2 mt-6 rounded-md hover:bg-emerald-700 transition"
+  
+  label="Reset Password →"
+/>
       
     </div>
   );

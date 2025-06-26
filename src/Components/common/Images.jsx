@@ -1,6 +1,6 @@
 
 
 
-export default function Image ({src , ...args}) {
-    return <img src={src} {...args}/>
-}
+export default function Image({ src, alt, ...args }) {
+    return <img src={src} alt={alt} {...args} />;
+  }

@@ -1,4 +1,7 @@
 import React from 'react';
+import Button from '../../Components/common/Button';
+import Images from '../../Components/common/Images';
+import Input from '../../Components/common/Input';
 
 function Verify() {
   return (
@@ -6,7 +9,7 @@ function Verify() {
       
       
       <div className="flex items-center justify-center text-center gap-2 mb-6">
-        <img src="/Images/bag.png" alt="logo" className="h-6 w-6" />
+        <Images src="/Images/bag.png" alt="logo" className="h-6 w-6" />
         <h1 className="text-xl font-semibold whitespace-nowrap">MyJob</h1>
       </div>
 
@@ -21,13 +24,18 @@ function Verify() {
 
       
       <div className="flex justify-center  mt-8">
-        <input
+        <Input
           type="text"
           placeholder="Verification Code"
           className="border border-gray-300 rounded-md py-2 md:px-32 px-20 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-center"
         />
       </div>
-      <button className='bg-emerald-700 text-white py-2.5 font-semibold mt-4 md:px-36 px-10 rounded-sm'>Verify My Account  → </button>
+      <Button
+  className="bg-button-bg text-white py-2.5 font-semibold mt-4 md:px-36 px-10 rounded-sm"
+  
+  label="Verify My Account  →"
+/>
+      
       <div className='flex flex-row mt-4'>
         <p className='text-gray-500'>Didn't recieve any code!</p>
         <p className='text-emerald-700 pl-2 '>Resend Code</p>

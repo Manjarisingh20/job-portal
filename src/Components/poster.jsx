@@ -3,9 +3,9 @@ import Stats from './common/Stats';
 
 function Poster() {
   return (
-    <div className="bg-white  ">
+    <div className="bg-white container mx-auto ">
       
-      <div className="flex flex-col  md:mr-16 md:ml-16 lg:flex-row mt-10 gap-10 px-6 md:px-12 py-16">
+      <div className="flex flex-col   lg:flex-row mt-10 gap-10  py-16">
         
         
         <div className="w-full lg:w-1/2">
@@ -40,7 +40,7 @@ function Poster() {
       </div>
 
       
-      <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-10 md:gap-20 py-12 px-6 md:px-20">
+      <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-10 md:gap-20 py-12 ">
   <Stats />
   <Stats />
   <Stats />
@@ -48,7 +48,7 @@ function Poster() {
 
 
       
-      <div className="bg-gray-800 text-white rounded-2xl  mt-14  mr-4 ml-4 md:mr-28 md:ml-28 p-8 md:p-16 text-left">
+      <div className="bg-gray-800 text-white rounded-2xl  mt-14   p-8 md:p-16 text-left">
         <h2 className="text-2xl md:text-4xl font-bold leading-snug">
           Create a Better <br className="hidden md:block" /> Future For Yourself
         </h2>

@@ -30,7 +30,7 @@
 
 
 
-/* Navbar base styling */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
   color: white;
 }
 
-/* Navbar menu */
+
 .navbar-menu {
   list-style: none;
   display: flex;
@@ -110,7 +110,7 @@
 }
 
 .navbar-right .register-btn {
-  background-color: #54bead;
+  background-color: #309689;
   color: white;
   padding: 10px 18px;
   border-radius: 8px;
