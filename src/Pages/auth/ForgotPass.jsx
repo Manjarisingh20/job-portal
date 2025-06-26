@@ -5,6 +5,7 @@ import Authstats from "../../Components/common/Authstats";
 import Images from "../../Components/common/Images"
 import Input from "../../Components/common/Input";
 
+
 const ForgotPass = () => {
   const navigate = useNavigate();
   return (

@@ -27,10 +27,12 @@ export default function Navbar() {
 
       
       <ul className="navbar-menu hidden md:flex">
+
         <li className="active" onClick={() => navigate("/")}>Home</li>
         <li onClick={() => navigate("/jobs")}>Jobs</li>
         <li onClick={() => navigate("/aboutus")}>About Us</li>
         <li onClick={() => navigate("/contactus")}>Contact Us</li>
+
       </ul>
 
       <div className="navbar-right hidden md:flex">
@@ -42,10 +44,12 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="absolute top-20 left-0 w-full bg-black bg-opacity-95 px-6 py-4 flex flex-col gap-4 md:hidden z-50">
           <ul className="flex flex-col gap-4 text-white text-base font-medium">
+
             <li className="active"  onClick={() => navigate("/")}>Home</li>
             <li onClick={() => navigate("/jobs")}>Jobs</li>
             <li onClick={() => navigate("/aboutus")}>About Us</li>
             <li onClick={() => navigate("/contactus")}>Contact Us</li>
+
           </ul>
           <div className="flex flex-col gap-3 mt-4">
             <button className="login-btn text-left" onClick={() => navigate("/login")}>Login</button>

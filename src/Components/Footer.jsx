@@ -2,6 +2,7 @@ import React from 'react';
 import Images from './common/Images';
 import Input from './common/Input';
 
+
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white   py-16">
