@@ -37,7 +37,7 @@ const JobsPage = () => {
           </div>
 
           <Drawer anchor="left" open={isDrawerOpen} onClose={toggleDrawer(false)}>
-            <div className="w-96 px-4 py-6">
+            <div className="w-96 px-4 py-6 ">
               <Sidebar />
             </div>
           </Drawer>

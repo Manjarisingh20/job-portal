@@ -18,7 +18,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="container   pt-14 ">
+    <div className="container xl:pt-14 ">
 
       <div>
       <div className="rounded-2xl bg-sidebar-bg p-4">
