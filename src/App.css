@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 * {
   box-sizing: border-box;
@@ -28,7 +31,11 @@
   color: rgb(27, 25, 25);
 }
 
-
+.sidebar-poster{
+  background-image: url(https://cdn.britannica.com/16/254816-050-41C9577A/Google-logo-Googleplex-headquarters-Mountain-View-California.jpg);
+  background-size: cover;
+  border-radius: 4%;
+}
 
 
 .navbar {
@@ -411,21 +418,9 @@
 
   
 }
-.button-jobdetails{
-        position: absolute;
-        top: 120px;
-        right: 40px;
-        background-color: #54bead;
-        color: white;
-        padding: 10px 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-
-}
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar {
     flex-wrap: wrap;
     padding: 20px;
@@ -439,19 +434,7 @@
     display: none;
   }
 
-  .navbar-icon {
-    width: 26px;
-    height: 26px;
-  }
-  .button-jobdetails{
-  
-    background-Color: #54bead;
-    color: white;
-    padding: 10px 10px;
-    border: none;
-    border-Radius: 5px;
-    cursor: pointer;
 
-}
+ 
 }
 

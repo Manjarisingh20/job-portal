@@ -18,7 +18,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="container hidden md:block w-1/4 pt-14 ">
+    <div className="container   pt-14 ">
 
       <div>
       <div className="rounded-2xl bg-sidebar-bg p-4">
@@ -229,7 +229,7 @@ export default function Sidebar() {
     </li>
   </ul>
 
-  {/* Salary Slider */}
+  
   <h3 className="text-lg font-semibold mt-4 mb-3 leading-none">Salary</h3>
   <Box sx={{ width: "100%" }}>
     <Slider
@@ -262,9 +262,11 @@ export default function Sidebar() {
   
 </div>
       </div>
-      <div className="bg-gray-500 h-96 mt-5  rounded-xl p-4 text-white flex flex-col  items-start">
+      <div className="sidebar-poster ">
+      <div className=" h-96 mt-5  rounded-xl p-4 text-white flex flex-col bg- items-start">
           <h1 className="text-2xl font-bold mb-2">WE ARE HIRING</h1>
           <p className="font-bold">Apply Today!</p>
+        </div>
         </div>
     </div>
   );

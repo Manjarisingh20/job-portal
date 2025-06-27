@@ -19,7 +19,7 @@ function RecentJobs() {
         </p>
       </div>
 
-      <div className="mt-10 flex md:mr-20 md:ml-20 flex-col gap-0">
+      <div className="mt-10 flex flex-col ">
         <JobCard
           postedTime="10 min ago"
           jobTitle="Forward Security Director"

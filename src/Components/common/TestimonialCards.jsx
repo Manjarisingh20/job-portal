@@ -1,30 +1,33 @@
 import React from "react";
-import Images from './Images'
+import Images from './Images';
 
 function TestimonialCards() {
   return (
-    <div className="bg-white  sm:w-[80%] md:w-[45%] lg:w-[30%] rounded-3xl md:mt-10 mt-2  pt-4 pb-1 md:pb-4 shadow-md ">
-      <div className="flex ml-4 md:ml-9 pt-1 md:pt-9 gap-2">
-        <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
-        <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
-        <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
-        <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
-        <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
-      </div>
-      <h1 className='mt-6 text-lg font-bold ml-4 md:ml-9'>Amazing services</h1>
-      <p className="ml-4 md:ml-9 mt-2 md:mt-6">
-        Metus faucibus sed turpis lectus feugiat<br></br>tincidunt.Rhoncus sed
-        tristique in dolor.<br></br>Mus etiam et vestibulum venenatis
-      </p>
-      <Images src='../Images/quote.png' alt='quote' className=" ml-60 md:ml-64 mt-1 md:mt-10 w-12 h-12"/>
-      <div className="flex pb-10 ">
-      <Images src='../Images/happiness.png' alt='happiness' className=" ml-9 w-12 h-12"/>
-
-      <div className="ml-5 mt-1">
-      <h1 className="font-bold">Marco Kim</h1>
-      <p >Happy Client</p>
-      </div>
+    <div className="bg-white w-full sm:w-[80%] md:w-[60%] lg:w-[30%] rounded-3xl mt-6 md:mt-10 p-6 shadow-md mx-auto md:mx-0">
       
+      <div className="flex justify-start gap-1 mb-4">
+        {[...Array(5)].map((_, i) => (
+          <Images key={i} src="/Images/star.png" alt="star" className="w-4 h-4" />
+        ))}
+      </div>
+
+      <h1 className="text-lg font-bold mb-2 text-center md:text-left">Amazing services</h1>
+      
+      <p className="text-sm text-gray-600 leading-relaxed text-center md:text-left">
+        Metus faucibus sed turpis lectus feugiat tincidunt. Rhoncus sed tristique 
+        in dolor. Mus etiam et vestibulum venenatis.
+      </p>
+
+      <div className="flex justify-end mt-4">
+        <Images src="/Images/quote.png" alt="quote" className="w-10 h-10 md:w-14 md:h-14" />
+      </div>
+
+      <div className="flex items-center gap-4 mt-6">
+        <Images src="/Images/happiness.png" alt="client" className="w-12 h-12 rounded-full" />
+        <div>
+          <h1 className="font-bold">Marco Kim</h1>
+          <p className="text-sm text-gray-500">Happy Client</p>
+        </div>
       </div>
     </div>
   );
