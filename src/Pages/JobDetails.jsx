@@ -5,6 +5,26 @@ import JobCard from "../Components/common/JobCard";
 import Layout from "../Components/common/Layout";
 import { FaCheck } from 'react-icons/fa';
 import Images from "../Components/common/Images";
+import Input from "../Components/common/Input";
+
+const responsibilities = [
+  "Et nunc ut tempus duis nisl sed massa. Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augu",
+  "Cras facilisis dignissim augue lorem amet adipiscing cursus fames mauris. Tortor amet porta proin in",
+  "Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augue lorem amet adipiscing cursus fames",
+  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
+  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
+  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
+];
+
+const skills =[
+  "Et nunc ut tempus duis nisl sed massa. Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augu",
+  "Cras facilisis dignissim augue lorem amet adipiscing cursus fames mauris. Tortor amet porta proin in",
+  "Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augue lorem amet adipiscing cursus fames",
+  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
+  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
+
+
+];
 
 const JobDetailsPage = () => {
   const handleJobClick = () => {
@@ -13,10 +33,15 @@ const JobDetailsPage = () => {
 
   return (
     <Layout>
+
+      <div className="">
       <div className="font-sans bg-white text-gray-800">
-        <h1 className="text-center text-white text-4xl font-bold pb-20 pt-3 bg-black">
+        <div className="bg-black">
+        <h1 className="text-center text-white text-4xl font-bold pb-20 pt-3 container">
           Job Details
         </h1>
+        </div>
+
 
         <div className="px-4 md:m-10 md:px-20">
           <JobCardd
@@ -28,7 +53,9 @@ const JobDetailsPage = () => {
           />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 px-4 md:m-10 md:px-20 mt-10">
+
+        <div className="flex flex-col md:flex-row gap-6  container mt-10">
+
           
           <div className="w-full md:w-3/4">
             
@@ -44,35 +71,26 @@ const JobDetailsPage = () => {
 
             
             <div className="mt-6">
-              <h3 className="text-2xl font-bold mb-4">Key Responsibilities</h3>
-              <ul className="list-none leading-loose space-y-2 text-sm md:text-base text-gray-600 break-words">
-                {[
-                  "Et nunc ut tempus duis nisl sed massa. Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augu",
-                  "Cras facilisis dignissim augue lorem amet adipiscing cursus fames mauris. Tortor amet porta proin in",
-                  "Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augue lorem amet adipiscing cursus fames",
-                  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
-                  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
-                  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <FaCheck className="text-button-bg mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+
+    <h3 className="text-2xl font-bold mb-4">Key Responsibilities</h3>
+    <ul className="list-none leading-loose space-y-2 text-sm md:text-base text-gray-600 break-words">
+      {responsibilities.map((item, index) => (
+        <li key={index} className="flex items-start gap-2">
+          <FaCheck className="text-button-bg mt-1" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
 
             
             <div className="mt-9">
               <h3 className="text-2xl font-bold mb-4">Professional Skills</h3>
               <ul className="list-none leading-loose space-y-2 text-sm md:text-base text-gray-600 break-words">
-                {[
-                  "Et nunc ut tempus duis nisl sed massa. Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augu",
-                  "Cras facilisis dignissim augue lorem amet adipiscing cursus fames mauris. Tortor amet porta proin in",
-                  "Ornare varius faucibus nisi vitae vitae cras ornare. Cras facilisis dignissim augue lorem amet adipiscing cursus fames",
-                  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
-                  "Tortor amet porta proin in. Orci imperdiet nisi dignissim pellentesque morbi vitae. Quisque tincidunt metus lectus porta",
-                ].map((item, index) => (
+
+                {skills.map((item, index) => (
+
                   <li key={index} className="flex items-start gap-2">
                     <FaCheck className="text-button-bg mt-1" />
                     <span>{item}</span>
@@ -149,17 +167,23 @@ const JobDetailsPage = () => {
             
             <div className="bg-emerald-50 p-5 rounded-xl">
               <h4 className="font-bold text-gray-800 text-lg mb-4">Send Us Message</h4>
-              <input
+
+              <Input
+
                 type="text"
                 placeholder="Full Name"
                 className="w-full mb-3 px-4 py-2 rounded text-sm bg-white border focus:outline-none"
               />
-              <input
+
+              <Input
+
                 type="text"
                 placeholder="Email Address"
                 className="w-full mb-3 px-4 py-2 rounded text-sm bg-white border focus:outline-none"
               />
-              <input
+
+              <Input
+
                 type="text"
                 placeholder="Phone Number"
                 className="w-full mb-3 px-4 py-2 rounded text-sm bg-white border focus:outline-none"
@@ -176,6 +200,9 @@ const JobDetailsPage = () => {
           </div>
         </div>
       </div>
+
+      </div>
+
     </Layout>
   );
 };

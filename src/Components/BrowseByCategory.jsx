@@ -15,8 +15,8 @@ function BrowseByCategory() {
   ];
 
   return (
-    <section className="bg-[#eaf6f4] py-16">
-      <div className="text-center mb-12 px-4">
+    <section className="container  py-16">
+      <div className="text-center mb-12 ">
         <h2 className="text-4xl font-bold mb-2">Browse by Category</h2>
         <p className="mt-3 text-xs text-center text-gray-500 whitespace-nowrap overflow-hidden text-ellipsis">
   At eu lobortis pretium tincidunt amet lacus ut aenean aliquet. Blandit a massa elementum id scel...
@@ -24,7 +24,7 @@ function BrowseByCategory() {
 
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6 md:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 ">
         {categories.map((cat, index) => (
           <CategoryCard key={index} title={cat.title} jobs={cat.jobs} icon={cat.icon} />
         ))}

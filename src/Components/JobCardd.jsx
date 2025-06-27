@@ -15,7 +15,9 @@ export default function JobCardd({
   const navigate = useNavigate();
 
   return (
-    <div className="relative p-4 sm:p-6 bg-white rounded-lg ">
+
+    <div className="relative container p-4 sm:p-6 bg-white rounded-lg ">
+
       
       <div className="text-xs bg-sidebar-bg p-1 w-fit rounded-lg text-button-bg mb-2">
         {postedTime}

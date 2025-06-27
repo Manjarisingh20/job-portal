@@ -1,13 +1,15 @@
 import React from 'react';
 import Images from './common/Images';
+import Input from './common/Input';
+
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white  px-6 py-16">
-      <div className="max-w-7xl    mx-auto">
+    <footer className="bg-gray-900 text-white   py-16">
+      <div className="  container ">
 
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:ml-14  lg:grid-cols-4 gap-12 text-left sm:text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2   lg:grid-cols-4 gap-12 text-left sm:text-left">
           
           
           <div>
@@ -50,7 +52,7 @@ function Footer() {
             <p className="text-sm text-center justify-center md:justify-start text-gray-300 mb-4">
               Eu nunc pretium vitae platea. Non netus elementum vulputate.
             </p>
-            <input
+            <Input
               type="text"
               placeholder="Email Address"
               className="w-full sm:w-64 px-4 py-2 rounded-md border border-gray-600 bg-gray-800 text-white mb-4"

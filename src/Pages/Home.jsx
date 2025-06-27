@@ -1,4 +1,4 @@
-// Pages/Home.jsx
+
 import React from "react";
 import HeroSection from "../Components/HeroSection";
 import Brands from "../Components/Brands";
@@ -12,8 +12,8 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 function Home() {
   return (
-    <div>
-      <div className="app">
+    <div className=" ">
+      <div className="app ">
         <div className="background">
           <Navbar />
           <HeroSection />
@@ -27,7 +27,10 @@ function Home() {
         <BrowseByCategory />
       </div>
       <Poster />
+      <div className="bg-emerald-100 ">
       <Testimonials />
+      </div>
+      
       <News />
       <Footer />
     </div>

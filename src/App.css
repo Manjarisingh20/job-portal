@@ -30,7 +30,7 @@
 
 
 
-/* Navbar base styling */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@
   color: white;
 }
 
-/* Navbar menu */
+
 .navbar-menu {
   list-style: none;
   display: flex;

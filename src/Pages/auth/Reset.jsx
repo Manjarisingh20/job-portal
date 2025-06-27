@@ -2,6 +2,9 @@ import React from 'react';
 import Button from '../../Components/common/Button';
 import Images from "../../Components/common/Images";
 
+import Input from '../../Components/common/Input';
+
+
 function Reset() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-start pt-10 font-sans">
@@ -23,12 +26,12 @@ function Reset() {
 
       
       <div className="flex flex-col gap-3 justify-center  mt-8">
-        <input
+        <Input
           type="text"
           placeholder="New Password"
           className="border border-gray-300 rounded-md py-2 md:px-32 px-20 focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"
         />
-        <input
+        <Input
           type="text"
           placeholder="New Password"
           className="border border-gray-300 rounded-md py-2 md:px-32 px-20 focus:outline-none focus:ring-2 focus:ring-blue-500 text-center"

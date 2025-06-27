@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../Components/common/Button";
 import Authstats from "../../Components/common/Authstats";
 import Images from "../../Components/common/Images"
+import Input from "../../Components/common/Input";
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,19 +28,22 @@ const Login = () => {
             </button>
           </p>
 
-          <input
+          <Input
+
             type="email"
             placeholder="Email address"
             className="border px-6 py-2 rounded-md w-full mt-3"
           />
-          <input
+
+          <Input
+
             type="password"
             placeholder="Password"
             className="border px-6  py-2 rounded-md w-full mt-3"
           />
 
           <div className="flex items-center mt-4 text-sm text-gray-600">
-            <input type="checkbox" className="mr-2 " />
+            <Input type="checkbox" className="mr-2 " />
             <p>Remember Me</p>
             <button
               className="text-emerald-600 pl-28 md:pl-56"
@@ -51,7 +56,9 @@ const Login = () => {
           <Button
             className="w-full bg-emerald-600 text-white py-2 mt-6 rounded-md hover:bg-emerald-700 transition"
             onClick={() => navigate("/verify")}
+
             label="Sign In →"
+
           />
 
           <div className="text-center text-gray-400 text-sm my-3">or</div>

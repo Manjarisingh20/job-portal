@@ -1,9 +1,12 @@
 import React from "react";
 import Images from "./common/Images"
 
+import Input from "./common/Input";
+
+
 export default function HeroSection() {
   return (
-    <section className="hero-section text-white px-4 md:px-10 lg:px-20 py-16 relative z-10">
+    <section className="hero-section container text-white  py-16 relative z-10">
       <h1 className="text-4xl md:text-6xl font-extrabold text-center leading-tight">
         Find Your Dream Job Today!
       </h1>
@@ -13,7 +16,7 @@ export default function HeroSection() {
       </p>
 
       <div className="search-bar mt-10 mx-auto max-w-4xl flex flex-col md:flex-row rounded-xl overflow-hidden shadow-lg">
-        <input
+        <Input
           type="text"
           placeholder="Job Title or Company"
           className="flex-1 px-5 py-4 text-black text-base"

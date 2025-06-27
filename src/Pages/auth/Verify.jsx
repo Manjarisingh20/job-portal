@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../../Components/common/Button';
 import Images from '../../Components/common/Images';
+import Input from '../../Components/common/Input';
+
 
 function Verify() {
   return (
@@ -23,7 +25,7 @@ function Verify() {
 
       
       <div className="flex justify-center  mt-8">
-        <input
+        <Input
           type="text"
           placeholder="Verification Code"
           className="border border-gray-300 rounded-md py-2 md:px-32 px-20 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-center"

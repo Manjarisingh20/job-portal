@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../Components/common/Button";
 import Authstats from "../../Components/common/Authstats";
 import Images from "../../Components/common/Images"
+import Input from "../../Components/common/Input";
+
 
 const ForgotPass = () => {
   const navigate = useNavigate();
@@ -31,7 +33,7 @@ const ForgotPass = () => {
 
           
           
-          <input type="email" placeholder="Email address" className="border px-6 py-2 rounded-md w-full mt-3" />
+          <Input type="email" placeholder="Email address" className="border px-6 py-2 rounded-md w-full mt-3" />
 
           
           <Button

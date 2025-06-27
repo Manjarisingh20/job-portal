@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../Components/common/Button";
 import Authstats from "../../Components/common/Authstats";
 import Images from "../../Components/common/Images";
+import Input from "../../Components/common/Input";
+
 
 const Register = () => {
   const navigate = useNavigate();
@@ -34,15 +36,15 @@ const Register = () => {
 
           
           <div className="flex gap-2">
-            <input type="text" placeholder="Full Name" className="border px-4 py-2 rounded-md w-1/2" />
-            <input type="text" placeholder="Username" className="border px-4 py-2 rounded-md w-1/2" />
+            <Input type="text" placeholder="Full Name" className="border px-4 py-2 rounded-md w-1/2" />
+            <Input type="text" placeholder="Username" className="border px-4 py-2 rounded-md w-1/2" />
           </div>
-          <input type="email" placeholder="Email address" className="border px-6 py-2 rounded-md w-full mt-3" />
-          <input type="password" placeholder="Password" className="border px-6  py-2 rounded-md w-full mt-3" />
-          <input type="password" placeholder="Confirm Password" className="border px-6  py-2 rounded-md w-full mt-3" />
+          <Input type="email" placeholder="Email address" className="border px-6 py-2 rounded-md w-full mt-3" />
+          <Input type="password" placeholder="Password" className="border px-6  py-2 rounded-md w-full mt-3" />
+          <Input type="password" placeholder="Confirm Password" className="border px-6  py-2 rounded-md w-full mt-3" />
 
           <div className="flex items-center mt-4 text-sm text-gray-600">
-            <input type="checkbox" className="mr-2" />
+            <Input type="checkbox" className="mr-2" />
             I've read and agree with your <span className="text-emerald-600 ml-1 cursor-pointer">Terms of Services</span>
           </div>
 

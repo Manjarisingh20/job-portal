@@ -3,7 +3,7 @@ import Images from './Images'
 
 function TestimonialCards() {
   return (
-    <div className="bg-white mr-2  gap-4 sm:w-[80%] md:w-[45%] lg:w-[30%] rounded-3xl md:mt-10 mt-2 pl-6 pr-6 pt-4 pb-1 md:pb-4 shadow-md ">
+    <div className="bg-white  sm:w-[80%] md:w-[45%] lg:w-[30%] rounded-3xl md:mt-10 mt-2  pt-4 pb-1 md:pb-4 shadow-md ">
       <div className="flex ml-4 md:ml-9 pt-1 md:pt-9 gap-2">
         <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
         <Images src="../Images/star.png" alt='star' className="w-4 h-4"/>
@@ -18,7 +18,8 @@ function TestimonialCards() {
       </p>
       <Images src='../Images/quote.png' alt='quote' className=" ml-60 md:ml-64 mt-1 md:mt-10 w-12 h-12"/>
       <div className="flex pb-10 ">
-      <Images src='../Images/happiness.png' alt='happiness' className=" ml-9 w-12 h-1"/>
+      <Images src='../Images/happiness.png' alt='happiness' className=" ml-9 w-12 h-12"/>
+
       <div className="ml-5 mt-1">
       <h1 className="font-bold">Marco Kim</h1>
       <p >Happy Client</p>
